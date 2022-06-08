@@ -1,0 +1,87 @@
+import 'package:flutter/material.dart';
+import 'package:flex_color_scheme/flex_color_scheme.dart';
+
+ThemeData lightTheme = FlexThemeData.light(
+  scheme: FlexScheme.brandBlue,
+  surfaceMode: FlexSurfaceMode.highScaffoldLowSurface,
+  blendLevel: 24,
+  appBarOpacity: 0.85,
+  transparentStatusBar: false,
+  appBarElevation: 6.0,
+  subThemesData: const FlexSubThemesData(
+    blendOnLevel: 24,
+    bottomSheetRadius: 20.0,
+    switchSchemeColor: SchemeColor.primary,
+    checkboxSchemeColor: SchemeColor.primary,
+    radioSchemeColor: SchemeColor.primary,
+    unselectedToggleIsColored: true,
+    fabRadius: 20.0,
+    chipRadius: 20.0,
+    cardRadius: 12.0,
+    popupMenuOpacity: 0.90,
+    popupMenuRadius: 8.0,
+    dialogRadius: 20.0,
+    timePickerDialogRadius: 20.0,
+    bottomNavigationBarOpacity: 0.85,
+    bottomNavigationBarElevation: 6.0,
+    navigationBarOpacity: 0.85,
+    navigationRailOpacity: 0.85,
+    navigationRailElevation: 6.0,
+  ),
+  keyColors: const FlexKeyColors(
+    useSecondary: true,
+    useTertiary: true,
+  ),
+  tones: FlexTones.vivid(Brightness.light),
+  visualDensity: FlexColorScheme.comfortablePlatformDensity,
+  useMaterial3: true,
+// To use the playground font, add GoogleFonts package and uncomment
+// fontFamily: GoogleFonts.notoSans().fontFamily,
+);
+
+ThemeData darkTheme = FlexThemeData.dark(
+  scheme: FlexScheme.brandBlue,
+  surfaceMode: FlexSurfaceMode.highScaffoldLowSurface,
+  blendLevel: 15,
+  appBarStyle: FlexAppBarStyle.background,
+  appBarOpacity: 0.90,
+  transparentStatusBar: false,
+  subThemesData: const FlexSubThemesData(
+    blendOnLevel: 30,
+    bottomSheetRadius: 20.0,
+    switchSchemeColor: SchemeColor.primary,
+    checkboxSchemeColor: SchemeColor.primary,
+    radioSchemeColor: SchemeColor.primary,
+    unselectedToggleIsColored: true,
+    fabRadius: 20.0,
+    chipRadius: 20.0,
+    cardRadius: 12.0,
+    popupMenuOpacity: 0.90,
+    popupMenuRadius: 8.0,
+    dialogRadius: 20.0,
+    timePickerDialogRadius: 20.0,
+    bottomNavigationBarOpacity: 0.85,
+    bottomNavigationBarElevation: 6.0,
+    navigationBarOpacity: 0.85,
+    navigationRailOpacity: 0.85,
+    navigationRailElevation: 6.0,
+  ),
+  keyColors: const FlexKeyColors(
+    useSecondary: true,
+    useTertiary: true,
+    keepPrimary: true,
+    keepSecondary: true,
+    keepTertiary: true,
+    keepPrimaryContainer: true,
+    keepSecondaryContainer: true,
+    keepTertiaryContainer: true,
+  ),
+  tones: FlexTones.vivid(Brightness.dark),
+  visualDensity: FlexColorScheme.comfortablePlatformDensity,
+  useMaterial3: true,
+// To use the playground font, add GoogleFonts package and uncomment
+// fontFamily: GoogleFonts.notoSans().fontFamily,
+);
+// If you do not have a themeMode switch, uncomment this line
+// to let the device system mode control the theme mode:
+// themeMode: ThemeMode.system,
